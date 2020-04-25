@@ -1,0 +1,29 @@
+# GraphQLのTips
+
+## スキーマ
+
+APIの仕様を表現するもの。キーマ定義言語（SDL(Schema Definition Language)）を使って表現する。
+
+一般的、拡張子は`graphqls`となる。
+
+[GraphQLのスキーマと型定義](https://qiita.com/NagaokaKenichi/items/d341dc092012e05d6606)
+
+
+inputは引数の型?みたいなのを定義する
+
+```
+input MessageInput {
+  content: String
+  author: String
+}
+
+type Mutation {
+  createMessage(input: MessageInput): Message
+  updateMessage(id: ID!, input: MessageInput): Message
+}
+```
+
+## 参考URL
+
+- [GraphQLのクエリを基礎から整理してみた](https://qiita.com/shunp/items/d85fc47b33e1b3a88167)
+- [Web API初心者と学ぶGraphQL](https://qiita.com/SiragumoHuin/items/cc58f456bc43a1be41b4)
