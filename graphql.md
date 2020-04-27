@@ -29,6 +29,11 @@ type Mutation {
 
 データソースとマッピングを行う
 
+## GitHubのGraphQLを叩く
+
+- [GitHub GraphQL API](https://developer.github.com/v4/explorer/)
+- [公式リファレンス](https://developer.github.com/v4/explorer/)
+
 ## 参考URL
 
 - [GraphQLのクエリを基礎から整理してみた](https://qiita.com/shunp/items/d85fc47b33e1b3a88167)
